@@ -1,0 +1,30 @@
+body {
+     padding-top: 50px;
+}
+
+#myCarousel img {
+     width: 100%;
+}
+
+
+.desc-photo {
+     border-radius: 100px;
+}
+
+.social_sprite span {
+     display: inline-block;
+     background-image: url("../img/social-sprite.png");
+     height: 32px;
+     width: 32px;
+     border-radius: 2px;
+
+}
+.social_sprite.facebook span{
+     background-position: 0 0;
+}
+.social_sprite.twitter span{
+     background-position: -32px 0;
+}
+.social_sprite.instagram span{
+     background-position: -32px -96px;
+}
