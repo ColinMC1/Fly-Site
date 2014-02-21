@@ -15,6 +15,9 @@ body {
      border-radius: 100px;
 }
 
+.staff-photo {
+     border-radius: 5px;
+}
 
 /* Social Sprites and Navbar
 ======================================*/
