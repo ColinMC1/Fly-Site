@@ -2,22 +2,59 @@ body {
      background-image: url("../img/brushed.png");
 }
 
+.divider {
+     display: block;
+     margin: 20px auto 20px auto;
+     text-align: center;
+}
+
+/* Index Page
+======================================*/
+
 #myCarousel {
      width: 100%;
      margin-top: -50px;
 }
 
+/* About Page
+======================================*/
+
+.about {
+     margin-top: 50px;
+}
+
+#map_canvas {
+    width: 400px;
+    height: 400px;
+    background-color: #CCC;
+  }
+
+  /* Pricing Page
+======================================*/
+
+.pricing {
+
+     margin-top: 50px;
+}
+
+.pricing-footer {
+     margin-bottom: 30px;
+     text-align: center;
+}
 
 /* Photos and logos
 ======================================*/
 
 .desc-photo {
      border-radius: 100px;
+     box-shadow: 10px 10px 5px #888888;
 }
 
 .staff-photo {
      border-radius: 5px;
+     box-shadow: 10px 10px 5px #888888;
 }
+
 
 /* Social Sprites and Navbar
 ======================================*/

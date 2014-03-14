@@ -5,10 +5,64 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+		<script>
+	      function initialize() {
+	        var map_canvas = document.getElementById('map_canvas');
+	        var map_options = {
+	          center: new google.maps.LatLng(43.6482947, -79.39821419999998),
+	          zoom: 16,
+	          mapTypeId: google.maps.MapTypeId.ROADMAP
+	        }
+	        var map = new google.maps.Map(map_canvas, map_options)
+	      }
+	      google.maps.event.addDomListener(window, 'load', initialize);
+	    </script>
   	</head>
   	<body>
+
+  		<!-- Top Nav Bar Section -->
+        <div class="navbar navbar-inverse navbar-fixed-top home-nav">
+          <div class="container">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            <a class="navbar-brand main-logo" href="index.html">Fly Studio</a>
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown"><a data-toggle="dropdown" data-target="#">About Fly <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="about.html">Fly Studio</a></li>
+                    <li><a href="about.html#instructors">Instructors</a></li>
+                    <li><a href="about.html#faq">F.A.Q.</a></li> 
+                    <li><a href="about.html#location">Location</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a data-toggle="dropdown" data-target="#">Classes <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="index.html#ayoga">Aerial Yoga</a></li>
+                    <li><a href="index.html#syoga">Suspension Yoga</a></li>
+                    <li><a href="index.html#agpilates">Anti-Gravity Pilates</a></li>
+                    <li><a href="index.html#strength">Suspended Strength</a></li>  
+                    <li><a href="index.html#sbarre">Suspended Barre</a></li>
+                    <li><a href="index.html#hiit">H.I.I.T.</a></li>
+                    <li><a href="index.html#reformer">Pilates Group Reformer</a></li>
+                    <li><a href="index.html#sculpt">Pilates Sculpt</a></li>
+                  </ul>
+                </li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="https://clients.mindbodyonline.com/ASP/home.asp?studioid=44994" target="_blank">Client Login</a></li>
+              </ul>
+            </div> 
+          </div>
+        </div>  
+
+        <!-- Bottom of Navbar Section -->
   		
-  		<div class="container">
+  		<div class="container about">
+
 	  		<h1>About Fly</h1>
 	  		<p>
 		  		At FLY Studio our mission is to create an oasis in Toronto's Downtown Core that will offer you an environment to make positive changes to your body and mind through a unique variety of practises.  We focus on taking your practise to new levels with the addition of the suspension element - when gravity does hold you back, you can literally soar.
@@ -18,72 +72,151 @@
 		  		No matter what your goals are, the combination of classes that are available at Fly Studio will get you where you want to be - come and see us today and you will see why
 	  		</p>
 
-	  		<h1 id="#instructors">Instructors</h1>
+	  		<img src="img/line.png" class="divider" id="instructors">
 
-	  		<h3>Kaye Pinaflor</h3>
-	  		<p>
-				Everyone is drawn to yoga for different reasons and I love being a part of that journey.
-				Yoga entered my life in 2006 thanks to Tracy + Jose Dos Anjos who opened Moksha Downtown in Toronto. It was there I took classes until it became my favourite “me time” activity.
-				When I completed the Yoga Teacher Training with Balanced Life Yoga, I was excited to learn more. To date, I've been certified to teach Aerial and Pre + Post Natal Yoga.
-				The practice of yoga is often misinterpreted. You don't have to be "bendy" and you don't have to be a zen master to stay focused during a class. All it takes is a commitment - just as it is with any sort of training. Once you become connected to your practice, be prepared to fall in love with your inner self.
-				Forever grateful for the teachers that inspired me on my yogic path: Shasta Townsend, Angela Ryan, Krista Bromfield, Shawna Fujijki, Laura Avard, Suzanne Hennig, Sydnie Nicoll, Lisa Barkin, David Good and Carmen Puyo.
-	  		</p>
-	  		<img src="img/kaye.png" class="staff-photo">
+	  		<h1>Instructors</h1>
+	  		<div class="row">
+		  		<div class="container">
+		  			<h3>Kaye Pinaflor</h3>
+			  			<div class="col-sm-9">
+					  		<p>
+								Everyone is drawn to yoga for different reasons and I love being a part of that journey.
+								Yoga entered my life in 2006 thanks to Tracy and Jose Dos Anjos who opened Moksha Downtown in Toronto. It was there I took classes until it became my favourite "me time" activity.
+								When I completed the Yoga Teacher Training with Balanced Life Yoga, I was excited to learn more. To date, I've been certified to teach Aerial and Pre and Post Natal Yoga.
+								The practice of yoga is often misinterpreted. You don't have to be "bendy" and you don't have to be a zen master to stay focused during a class. All it takes is a commitment - just as it is with any sort of training. Once you become connected to your practice, be prepared to fall in love with your inner self.
+								Forever grateful for the teachers that inspired me on my yogic path: Shasta Townsend, Angela Ryan, Krista Bromfield, Shawna Fujijki, Laura Avard, Suzanne Hennig, Sydnie Nicoll, Lisa Barkin, David Good and Carmen Puyo.
+					  		</p>
+				  		</div>
+			  		<div class="col-sm-3">
+			  			<img src="img/kaye.png" class="staff-photo">
+			  		</div>
+		  		</div>
+		  	</div>
 
-	  		<h3>Juan Carlos Villegas</h3>
-	  		<p>
- 				Yoga came into my life while I was still a busy university student in Vancouver, BC. I had been longing to find balance amongst my many interests and yoga was the practice that brought unification, and started me on a new path. After graduation I became more serious about my practice and in 2009 I completed my yoga teacher training at Prana Yoga College and have been teaching ever since. My dedication has granted me the opportunity to teach in many places and many styles. In addition to my exploration in yoga I decided to pursue a career in contemporary dance, a dream I always had. I enrolled in Simon Fraser University's post-bachelors diploma in contemporary dance where I spent 3 years furthering my knowledge of alignment, anatomy, injury prevention, bio-mechanics and physiology. In 2011 I became a certified Pilates instructor through the PhysicalMind Institute of Canada and recently I received my aerial yoga certification through P3 Yoga in Pickering, ON.
- 			</p>
- 			<img src="img/juan.png" class="staff-photo">
+	  		<div class="row">
+		  		<div class="container">
+			  		<h3>Juan Carlos Villegas</h3>
+			  		<div class="col-sm-9">
+				  		<p>
+			 				Yoga came into my life while I was still a busy university student in Vancouver, BC. I had been longing to find balance amongst my many interests and yoga was the practice that brought unification, and started me on a new path. After graduation I became more serious about my practice and in 2009 I completed my yoga teacher training at Prana Yoga College and have been teaching ever since. My dedication has granted me the opportunity to teach in many places and many styles. In addition to my exploration in yoga I decided to pursue a career in contemporary dance, a dream I always had. I enrolled in Simon Fraser University's post-bachelors diploma in contemporary dance where I spent 3 years furthering my knowledge of alignment, anatomy, injury prevention, bio-mechanics and physiology. In 2011 I became a certified Pilates instructor through the PhysicalMind Institute of Canada and recently I received my aerial yoga certification through P3 Yoga in Pickering, ON.
+			 			</p>
+			 		</div>
+		 			<div class="col-sm-3">
+			 			<img src="img/juan.png" class="staff-photo">
+		 			</div>
+		 			
+	 			</div>
+ 			</div>
 
- 			<h3>Polina Leibovskaia</h3>
- 			<p>
- 				Balance is what keeps me happy in my life. Regular yoga practice has become a very important part in finding that balance by making me feel calm, grounded and motivated. I chose to become a yoga instructor so I could share this positive experience with people; encouraging them to feel good about moving their bodies and showing them how to release the tension that builds up in the daily grind. When I completed my teacher training in CorYoga, I became interested in anti-gravity yoga practice and completed teacher training in suspension yoga.  Using the sling and the handles adds to your yoga practice experience off the floor.  Suspension yoga will increase your body awareness, build balance and coordination, and release muscular tension as well as strengthen and tone your entire body. Be prepared to fly!
- 			</p>
- 			<img src="img/polina.png" class="staff-photo">
+ 			<div class="row">
+		  		<div class="container">
+			  		<h3>Polina Leibovskaia</h3>
+			  		<div class="col-sm-9">
+				  		<p>
+			 				Balance is what keeps me happy in my life. Regular yoga practice has become a very important part in finding that balance by making me feel calm, grounded and motivated. I chose to become a yoga instructor so I could share this positive experience with people; encouraging them to feel good about moving their bodies and showing them how to release the tension that builds up in the daily grind. When I completed my teacher training in CorYoga, I became interested in anti-gravity yoga practice and completed teacher training in suspension yoga.  Using the sling and the handles adds to your yoga practice experience off the floor.  Suspension yoga will increase your body awareness, build balance and coordination, and release muscular tension as well as strengthen and tone your entire body. Be prepared to fly!
+			 			</p>
+			 		</div>
+		 			<div class="col-sm-3">
+			 			<img src="img/polina.png" class="staff-photo">
+		 			</div>
+		 			
+	 			</div>
+ 			</div>
 
- 			<h3>Lori Ann Bryant</h3>
- 			<p>
- 				Lori began her yogic journey shortly after completing her Psychology Degree in 2005 and became certified to teach in 2009. Her passion for healing has guided her to attunements and trainings in several different healing modalities including Reiki, Reconnective healing and Theta healing™. She is also certified as a traditional Thai masseuse, is an Unatta® Aerial yoga teacher and is currently studying Eastern medicine to become an acupuncturist. Lori believes that personal growth is at the heart of yoga practice and therefore it is her goal as a facilitator to create a safe space for such cultivation. As an avid traveler, and an aspiring artist Lori receives inspiration from life experiences and thus is a strong advocate for living life in our highest potential. In her eyes all it takes is a sense of innocence and pliability for the generation of limitless possibilities because we are always on a path of continual change and progression. Lori welcomes you to come embark on this unknown journey with her to embrace and allow things to unfold from a place of love and compassion for yourself and others.
- 			</p>
- 			<img src="img/lori.png" class="staff-photo">
+ 			
+ 			<div class="row">
+		  		<div class="container">
+			  		<h3>Lori Ann Bryant</h3>
+			  		<div class="col-sm-9">  		
+			 			<p>
+			 				Lori began her yogic journey shortly after completing her Psychology Degree in 2005 and became certified to teach in 2009. Her passion for healing has guided her to attunements and trainings in several different healing modalities including Reiki, Reconnective healing and Theta healing. She is also certified as a traditional Thai masseuse, is an Unatta Aerial yoga teacher and is currently studying Eastern medicine to become an acupuncturist. Lori believes that personal growth is at the heart of yoga practice and therefore it is her goal as a facilitator to create a safe space for such cultivation. As an avid traveler, and an aspiring artist Lori receives inspiration from life experiences and thus is a strong advocate for living life in our highest potential. In her eyes all it takes is a sense of innocence and pliability for the generation of limitless possibilities because we are always on a path of continual change and progression. Lori welcomes you to come embark on this unknown journey with her to embrace and allow things to unfold from a place of love and compassion for yourself and others.
+			 			</p>
+			 		</div>
+		 			<div class="col-sm-3">
+			 			<img src="img/lori.png" class="staff-photo">
+		 			</div>	
+	 			</div>
+ 			</div>
 
- 			<h3>Lia Di Bartolomeo</h3>
- 			<p>
- 				Lia's passion for movement began as a child when she practiced gymnastics and continued through years of dance. She was immediately hooked on Pilates after taking her first class. After a year of dedicated practice, Lia decided to pursue training to share the benefits of Pilates that she had experienced.
-				Lia obtained certification to teach Pilates Mat from Body Harmonics in Toronto. Her approach to Pilates maintains that the exercises practiced are the vehicle which drive us towards increased mental and physical awareness, improved mobility, and strength.
-				Her encouraging teaching style and keen eye for movement help clients improve their body awareness and alignment. She enjoys creating unique exercise modifications to promote greater ease of movement and healthy biomechanics. Lia is inspired by the changes she sees in front of her as she watches people build strength and make health a priority.
-				Lia is dedicated to personalizing exercise programs to help each client reach their full potential in the studio and carry those skills over to everyday activities and sports. Pilates aside, when Lia isn't working you can probably find her travelling, diving, and trying new restaurants.
- 			</p>
- 			<img src="img/lia.png" class="staff-photo">
+ 			<div class="row">
+		  		<div class="container">
+			  		<h3>Lia Di Bartolomeo</h3>
+			  		<div class="col-sm-9">  		
+			 			<p>
+			 				Lia's passion for movement began as a child when she practiced gymnastics and continued through years of dance. She was immediately hooked on Pilates after taking her first class. After a year of dedicated practice, Lia decided to pursue training to share the benefits of Pilates that she had experienced.
+							Lia obtained certification to teach Pilates Mat from Body Harmonics in Toronto. Her approach to Pilates maintains that the exercises practiced are the vehicle which drive us towards increased mental and physical awareness, improved mobility, and strength.
+							Her encouraging teaching style and keen eye for movement help clients improve their body awareness and alignment. She enjoys creating unique exercise modifications to promote greater ease of movement and healthy biomechanics. Lia is inspired by the changes she sees in front of her as she watches people build strength and make health a priority.
+							Lia is dedicated to personalizing exercise programs to help each client reach their full potential in the studio and carry those skills over to everyday activities and sports. Pilates aside, when Lia isn't working you can probably find her travelling, diving, and trying new restaurants.
+			 			</p>
+			 		</div>
+		 			<div class="col-sm-3">
+			 			<img src="img/lia.png" class="staff-photo">
+		 			</div>	
+	 			</div>
+ 			</div>
+ 			
+ 			<div class="row">
+		  		<div class="container">
+			  		<h3>Cristin Fagone</h3>
+			  		<div class="col-sm-9">  		
+			 			<p>Cristin Fagone is a Certified Holistic Nutritionist, Power Pilates instructor, and TRX trainer with more than ten years of experience in the health and wellness industry. She is also the founder of Sono Brio Whole Body Health <a href="http:/www.sonobrio.com/" target="_blank">(www.sonobrio.com)</a>, a full service web-based outlet to help busy people live healthier lives one day at a time. Having lived all over North America (New Hampshire, Rhode Island, Boston, San Francisco, Vancouver, and now Toronto), Cristin has helped hundreds of people find their best health through nutritious food and mindful movement. Cristin is a Screen Actors Guild actor and model, so there is a chance you may have even seen her before in one of the many feature films, television shows, commercials, or advertisements she has appeared in. Cristin's goal is to always make her classes as fun and light-hearted as they are physically challenging. When she's not playing around with anti-gravity fitness techniques in the studio, Cristin is busy pursuing her MBA at York University's Schulich School of Business.
+			 			</p>
+			 		</div>
+		 			<div class="col-sm-3">
+			 			<img src="img/cristin.png" class="staff-photo">
+		 			</div>
+	 			</div>
+ 			</div>
+ 			
+ 			<div class="row">
+		  		<div class="container">
+			  		<h3>Jane Spence</h3>
+			  		<div class="col-sm-9">  		
+			 			<p>
+			 				Jane has always been involved in teaching and has expanded her field to include fitness training. At the suggestion of one of her fitness instructors she started her training in 2010. Jane first became a certified Pilates Mat instructor through Body Harmonics in Toronto, Ontario in 2010. Then in 2011, she became a certified C.O.R.E indoor cycling instructor. 
 
- 			<h3>Cristin Fagone</h3>
- 			<p>
- 				Cristin Fagone is a Certified Holistic Nutritionist, Power Pilates instructor, and TRX trainer with more than ten years of experience in the health and wellness industry. She is also the founder of Sono Brio Whole Body Health <a href="http:/www.sonobrio.com/" target="_blank">(www.sonobrio.com)</a>, a full service web-based outlet to help busy people live healthier lives one day at a time. Having lived all over North America (New Hampshire, Rhode Island, Boston, San Francisco, Vancouver, and now Toronto), Cristin has helped hundreds of people find their best health through nutritious food and mindful movement. Cristin is a Screen Actors Guild actor and model, so there is a chance you may have even seen her before in one of the many feature films, television shows, commercials, or advertisements she has appeared in. Cristin's goal is to always make her classes as fun and light-hearted as they are physically challenging. When she's not playing around with anti-gravity fitness techniques in the studio, Cristin is busy pursuing her MBA at York University's Schulich School of Business.
- 			</p>
- 			<img src="img/cristin.png" class="staff-photo">
+							To fill out her certifications, Jane then pursued a certification in Yoga Tune Up Therapy Balls. These balls are used to administer self-massage. Jane led a number of workshops that introduced self-massage for the back, neck, shoulders, hips, and legs.
 
- 			<h3>Jane Spence</h3>
- 			<p>
- 				Jane has always been involved in teaching and has expanded her field to include fitness training. At the suggestion of one of her fitness instructors she started her training in 2010. Jane first became a certified Pilates Mat instructor through Body Harmonics in Toronto, Ontario in 2010. Then in 2011, she became a certified C.O.R.E indoor cycling instructor. 
+							She brings a sense of humour to her classes and strives to create a comfortable and safe environment for all of her students. Jane will offer modifications for many of the exercises included in her classes to ensure that each student feels confident in their movements. 
 
-				She brings a sense of humour to her classes and strives to create a comfortable and safe environment for all of her students. Jane will offer modifications for many of the exercises included in her classes to ensure that each student feels confident in their movements. 
+							In her spare time Jane likes to paint and create screen prints on clothing for her friends and family.
+			 			</p>
+			 		</div>
+		 			<div class="col-sm-3">
+			 			<img src="img/jane.png" class="staff-photo">
+		 			</div>
+	 			</div>
+ 			</div>
 
-				In her spare time Jane likes to paint and create screen prints on clothing for her friends and family. 
- 			</p>
- 			<img src="img/jane.png" class="staff-photo">
+ 			<div class="row">
+		  		<div class="container">
+			  		<h3>Katherine Pittman</h3>
+			  		<div class="col-sm-12">
+			  			<p>
+			 				Katherine brings a decade of training and teaching to the Body Conditioning programs at Fly. Her career as a Can Fit Pro Personal Trainer and fitness instructor spans 10 years, 4 provinces and an incredibly diverse range of clientele and fitness modalities. Thanks to the unique space, equipment and attitude at Fly, Katherine gets to do what she does best- teach creative, smart, tough classes with a down-to-earth, personal approach.
+			 			</p>
+			 		</div>
+		 			
+	 			</div>
+ 			</div>
+ 			
+ 			<div class="row">
+		  		<div class="container">
+			  		<h3>Natalie Harper</h3>
+			  		<div class="col-sm-12">
+			  			<p>
+			 				Natalie has been a life long fitness enthusiast. As a child, she was a competitive gymnast and became passionate about  pilates shortly after.  She completed her Pilates Mat Certification through Stott in 2007 and went on to complete her full certification with Pilates Academy International in New York City in 2008. Her passion for health and wellness led her to pursue a career in teaching pilates. She enjoys giving her clients new and creative exercises to reconnect with their bodies in ways they have never done previously. She is currently studying Chinese Medicine and Acupuncture with hopes of bringing even more balance and harmony to the health of her clients.
+			 			</p>
+			 		</div>
+		 			
+	 			</div>
+ 			</div>
+ 			
 
- 			<h3>Katherine Pittman</h3>
- 			<p>
- 				Katherine brings a decade of training and teaching to the Body Conditioning programs at Fly. Her career as a Can Fit Pro Personal Trainer and fitness instructor spans 10 years, 4 provinces and an incredibly diverse range of clientele and fitness modalities. Thanks to the unique space, equipment and attitude at Fly, Katherine gets to do what she does best- teach creative, smart, tough classes with a down-to-earth, personal approach.
- 			</p>
+ 			<img src="img/line.png" class="divider" id="faq">
+ 			
 
- 			<h3>Natalie Harper</h3>
- 			<p>
- 				Natalie has been a life long fitness enthusiast. As a child, she was a competitive gymnast and became passionate about  pilates shortly after.  She completed her Pilates Mat Certification through Stott in 2007 and went on to complete her full certification with Pilates Academy International in New York City in 2008. Her passion for health and wellness led her to pursue a career in teaching pilates. She enjoys giving her clients new and creative exercises to reconnect with their bodies in ways they have never done previously. She is currently studying Chinese Medicine and Acupuncture with hopes of bringing even more balance and harmony to the health of her clients.
- 			</p>
-
- 			<h1 id="faq">F.A.Q.</h1>
+ 			<h1>F.A.Q.</h1>
  			<p> 
 				Q:  Do I need experience in suspension or aerial yoga before I take a class?
 			</p>
@@ -122,8 +255,24 @@
 			<p>	 
 				A:  We recommend taking at least three beginner reformer classes or a 4 week workshop before joining any of our open level reformer classes. This will give you the knowledge and confidence to make the class enjoyable and beneficial. Contact us for details on our next beginner workshop.
  			</p>
+
+ 			<img src="img/line.png" class="divider" id="location">
  			
-  		</div>
+			<div class="row">
+				<div class="container">
+					<div class="col-md-6">
+					  	<h1>Location</h1>
+					  	<p>489 Queen St W - Toronto</p>
+					  	<p>Second floor, above "Brooklyn Project"</p>
+					  	<p>Phone: (647) 350-3597</p>
+				  	</div>
+			  		<div class="col-md-6" id="map_canvas"></div>
+			</div>
+	  	</div>
+  		
+	  	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+
 
   	</body>
 
